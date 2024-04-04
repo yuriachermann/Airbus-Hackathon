@@ -205,23 +205,23 @@ function Manufacturing() {
               mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
             >
               {pins}
-              <Popup
-                anchor="top"
-                longitude={Number(popupInfo.longitude)}
-                latitude={Number(popupInfo.latitude)}
-                onClose={() => setPopupInfo(null)}
-                className="w-28"
-              >
-                <div key={`img`}>
-                  <Image
-                    src={popupInfo.image}
-                    alt=""
-                    width={100}
-                    height={100}
-                    className="rounded-lg"
-                  />
-                </div>
-              </Popup>
+              {/*<Popup*/}
+              {/*  anchor="top"*/}
+              {/*  longitude={Number(popupInfo.longitude)}*/}
+              {/*  latitude={Number(popupInfo.latitude)}*/}
+              {/*  onClose={() => setPopupInfo(null)}*/}
+              {/*  className="w-28"*/}
+              {/*>*/}
+              {/*  <div key={`img`}>*/}
+              {/*    <Image*/}
+              {/*      src={popupInfo.image}*/}
+              {/*      alt=""*/}
+              {/*      width={100}*/}
+              {/*      height={100}*/}
+              {/*      className="rounded-lg"*/}
+              {/*    />*/}
+              {/*  </div>*/}
+              {/*</Popup>*/}
             </Map>
           </div>
         </div>
