@@ -20,10 +20,10 @@ function Orders() {
                 <div>
                   <div className="grid grid-cols-6 grid-rows-1 ">
                     <span className="font-medium text-slate-200">
-                      📣{order.order_user}
+                      📣
                     </span>
                     <span className="font-medium col-span-3 text-slate-200">
-                      Asked: {order.order_food}
+                      Asked: {order.order_user}
                     </span>
                     <span className="font-medium text-slate-200">
                       from {order.order_city}
