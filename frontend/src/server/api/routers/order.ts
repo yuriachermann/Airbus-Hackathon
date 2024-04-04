@@ -34,7 +34,7 @@ export const orderRouter = createTRPCRouter({
           id: z.number().optional(),
           cuttingEdgeID: z.string().optional(),
           orderUser: z.string().optional(),
-          orderFood: z.string().optional(),
+          // orderFood: z.string().optional(),
           orderCity: z.string().optional(),
           orderRating: z.number().optional(),
           orderReview: z.string().optional(),
@@ -50,7 +50,7 @@ export const orderRouter = createTRPCRouter({
           order_id:
             input?.cuttingEdgeID != null ? input?.cuttingEdgeID : undefined,
           order_user: input?.orderUser != null ? input?.orderUser : undefined,
-          order_food: input?.orderFood != null ? input?.orderFood : undefined,
+          // order_food: input?.orderFood != null ? input?.orderFood : undefined,
           order_city:
             input?.orderCity != null ? input?.orderCity : undefined,
           order_rating:
