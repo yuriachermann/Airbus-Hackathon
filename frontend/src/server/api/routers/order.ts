@@ -72,7 +72,7 @@ export const orderRouter = createTRPCRouter({
         }),
         update: z.object({
           orderUser: z.string().optional(),
-          orderFood: z.string().optional(),
+          // orderFood: z.string().optional(),
           orderCity: z.string().optional(),
           orderRating: z.number().optional(),
           orderReview: z.string().optional(),
@@ -90,8 +90,8 @@ export const orderRouter = createTRPCRouter({
         data: {
           order_user:
             input?.update.orderUser != null ? input?.update.orderUser : undefined,
-          order_food:
-            input?.update.orderFood != null ? input?.update.orderFood : undefined,
+          // order_food:
+            // input?.update.orderFood != null ? input?.update.orderFood : undefined,
           order_city:
             input?.update.orderCity != null
               ? input?.update.orderCity
