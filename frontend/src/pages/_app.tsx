@@ -14,7 +14,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <div
-        className={`select-none font-inter tracking-tight text-slate-100 antialiased`}
+        className={`font-inter text-slate-100`}
       >
         <Component {...pageProps} />
         <Analytics />

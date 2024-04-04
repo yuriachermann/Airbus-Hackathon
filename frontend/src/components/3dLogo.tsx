@@ -4,23 +4,23 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ContactShadows, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
-const GLTFModel = () => {
+const GLTFModel = ({file}: {file: string}) => {
   const gltfRef = useRef<THREE.Group>(null);
 
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
-    gltfRef.current?.rotation.set(
-      Math.cos(t / 4) / 2,
-      Math.sin(t / 4) / 2,
-      -0.2 - (1 + Math.sin(t / 3)) / 24
-    );
+    // gltfRef.current?.rotation.set(
+    //   Math.cos(t / 4) / 2,
+    //   Math.sin(t / 4) / 2,
+    //   -0.2 - (1 + Math.sin(t / 3)) / 24
+    // );
     if (gltfRef.current)
-      gltfRef.current.position.y = (1 + Math.sin(t / 1.5)) / 10;
+      gltfRef.current.position.y = (1 + Math.sin(t / 0.5)) / 10;
   });
 
   useEffect(() => {
     const loader = new GLTFLoader();
-    loader.load("quad.glb", (gltf) => {
+    loader.load(`${file}.glb`, (gltf) => {
       if (gltfRef.current) {
         gltfRef.current.add(gltf.scene);
       }
@@ -30,7 +30,7 @@ const GLTFModel = () => {
   return <group ref={gltfRef} />;
 };
 
-const Logo = ({ fov }: { fov: number }) => {
+const Logo = ({ fov, file }: { fov: number; file: string }) => {
   const cameraRef = useRef<null>(null);
 
   return (
@@ -42,14 +42,14 @@ const Logo = ({ fov }: { fov: number }) => {
         penumbra={1}
         position={[10, 15, 10]}
       />
-      <GLTFModel />
+      <GLTFModel file={file} />
       <PerspectiveCamera
         ref={cameraRef}
         makeDefault
         fov={fov}
         near={0.1}
         far={1000}
-        position={[10, 10, 10]}
+        position={[100, 0, 0]}
       />
       <ContactShadows
         position={[5, 5, 5]}

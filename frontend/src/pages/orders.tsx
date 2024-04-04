@@ -23,10 +23,10 @@ function Orders() {
                       📣{order.order_user}
                     </span>
                     <span className="font-medium col-span-3 text-slate-200">
-                      ordered a {order.order_food}
+                      Asked: {order.order_food}
                     </span>
                     <span className="font-medium text-slate-200">
-                      in {order.order_city}
+                      from {order.order_city}
                     </span>
                     <span className="mb-2 block text-sm text-slate-200">
                       Rating: {order.order_rating}

@@ -25,7 +25,7 @@ function Header({
   const { pathname } = location;
 
   return (
-    <header className="sticky top-0 z-10 bg-gradient-to-b from-[#fff] from-55% to-transparent">
+    <header className="sticky top-0 z-10 bg-gradient-to-b from-[#000] from-55% to-transparent">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="mb-6 flex h-10 items-center justify-between">
           {/* Header: Left side */}
@@ -51,16 +51,16 @@ function Header({
                 <rect x="4" y="17" width="16" height="2" />
               </svg>
             </button>
-            <Link href="/" className="flex flex-row items-center gap-4">
+            <Link href="/" className="flex flex-row items-center gap-2">
               <Image
-                src="/logo.png"
+                src="/Logo.png"
                 alt="logo"
                 className="h-6 w-auto"
-                width={10}
-                height={10}
+                width={100}
+                height={100}
               />
               <Image
-                src="/name_logo.png"
+                src="/Infinity.png"
                 alt="name"
                 className="h-4 w-auto"
                 width={500}
@@ -71,54 +71,44 @@ function Header({
 
           <div className="hidden lg:block">
             <div className="flex flex-row items-center justify-center gap-8">
-              <Link href={`/ordering?${routeUser ? `user=${routeUser}` : ""}`}>
+              <Link href={`/ordering2?${routeUser ? `user=${routeUser}` : ""}`}>
                 <span
                   className={clsx(
-                    "text-[#606060] hover:text-[#BBBBBB]",
-                    pathname.includes("ordering") && "!text-[#CC5500]"
+                    "text-[#bbbbbb] hover:text-[#fff]",
+                    pathname.includes("ordering2") && "!text-[#CC5500]"
                   )}
                 >
-                  Place Order
+                  Q&A
                 </span>
               </Link>
-              <Link href={`/logistics?${routeUser ? `user=${routeUser}` : ""}`}>
+              <Link href={`/projecting?${routeUser ? `user=${routeUser}` : ""}`}>
                 <span
                   className={clsx(
-                    "text-[#606060] hover:text-[#BBBBBB]",
-                    pathname.includes("logistics") && "!text-[#CC5500]"
+                    "text-[#bbbbbb] hover:text-[#fff]",
+                    pathname.includes("projecting") && "!text-[#CC5500]"
                   )}
                 >
-                  Logistics
+                  Projecting
                 </span>
               </Link>
-              <Link href={`/flying?${routeUser ? `user=${routeUser}` : ""}`}>
+              <Link href={`/manufacturing?${routeUser ? `user=${routeUser}` : ""}`}>
                 <span
                   className={clsx(
-                    "text-[#606060] hover:text-[#BBBBBB]",
-                    pathname.includes("flying") && "!text-[#CC5500]"
+                    "text-[#bbbbbb] hover:text-[#fff]",
+                    pathname.includes("manufacturing") && "!text-[#CC5500]"
                   )}
                 >
-                  Flying
+                  Manufacturing
                 </span>
               </Link>
               <Link href={`/landing?${routeUser ? `user=${routeUser}` : ""}`}>
                 <span
                   className={clsx(
-                    "text-[#606060] hover:text-[#BBBBBB]",
+                    "text-[#bbbbbb] hover:text-[#fff]",
                     pathname.includes("landing") && "!text-[#CC5500]"
                   )}
                 >
-                  Landing
-                </span>
-              </Link>
-              <Link href={`/delivery?${routeUser ? `user=${routeUser}` : ""}`}>
-                <span
-                  className={clsx(
-                    "text-[#606060] hover:text-[#BBBBBB]",
-                    pathname.includes("delivery") && "!text-[#CC5500]"
-                  )}
-                >
-                  Delivery
+                  Inspecting
                 </span>
               </Link>
             </div>

@@ -106,19 +106,19 @@ function Ordering() {
   const handleCreateOrder = ({
     orderID,
     user,
-    food,
+    // food,
     city,
   }: {
     orderID: string;
     user: string;
-    food: string;
+    // food: string;
     city: string;
   }) => {
     // Continue with the existing mutation after the file has been uploaded
     void createOrder({
       orderID: orderID,
       orderUser: user,
-      orderFood: food,
+      // orderFood: food,
       orderCity: city,
     }).then(() => utils.invalidate());
     close();
@@ -179,7 +179,7 @@ function Ordering() {
                   handleCreateOrder({
                     orderID: orderID,
                     user: values.firstName,
-                    food: food,
+                    // food: food,
                     city: city,
                   });
                   setTimeout(() => {

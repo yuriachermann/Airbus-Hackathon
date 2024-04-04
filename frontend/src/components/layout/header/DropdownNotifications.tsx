@@ -64,7 +64,7 @@ function DropdownNotifications() {
                 />
               </svg>
               {/*TODO: vanish notification ping when read*/}
-              <div className="absolute right-0 top-0 h-2 w-2 rounded-full bg-[#CC5500]"></div>
+              <div className="absolute right-0 top-0 h-2 w-2 rounded-full bg-[#6399ae]"></div>
             </button>
           </div>
         </DropdownMenu.Trigger>

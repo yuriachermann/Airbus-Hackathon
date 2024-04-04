@@ -7,7 +7,7 @@ export const orderRouter = createTRPCRouter({
       z.object({
         orderID: z.string(),
         orderUser: z.string(),
-        orderFood: z.string(),
+        // orderFood: z.string(),
         orderCity: z.string(),
         // orderRating: z.number(),
         // orderReview: z.string(),
@@ -18,7 +18,7 @@ export const orderRouter = createTRPCRouter({
         data: {
           order_id: input?.orderID,
           order_user: input?.orderUser,
-          order_food: input?.orderFood,
+          // order_food: input?.orderFood,
           order_city: input?.orderCity,
           // order_rating: input?.orderRating,
           // order_review: input?.orderReview,
