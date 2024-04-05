@@ -23,7 +23,7 @@ function Orders() {
                       📣
                     </span>
                     <span className="font-medium col-span-3 text-slate-200">
-                      Asked: {order.order_user}
+                      Asked: {order.order_ask}
                     </span>
                     <span className="font-medium text-slate-200">
                       from {order.order_city}

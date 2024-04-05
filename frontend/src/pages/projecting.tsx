@@ -96,7 +96,7 @@ function Manufacturing() {
 
   return (
     <Layout>
-      <main className="relative grow">
+      <main className="relative grow select-none">
         <div className="flex items-center justify-center">
           {/* Show info about the client location and order */}
           <div className="z-10 -mt-8 h-96 w-full self-center">

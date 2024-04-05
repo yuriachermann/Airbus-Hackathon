@@ -6,7 +6,7 @@ export const orderRouter = createTRPCRouter({
     .input(
       z.object({
         orderID: z.string(),
-        orderUser: z.string(),
+        orderAsk: z.string(),
         // orderFood: z.string(),
         orderCity: z.string(),
         // orderRating: z.number(),
@@ -17,7 +17,7 @@ export const orderRouter = createTRPCRouter({
       await prisma.order.create({
         data: {
           order_id: input?.orderID,
-          order_user: input?.orderUser,
+          order_ask: input?.orderAsk,
           // order_food: input?.orderFood,
           order_city: input?.orderCity,
           // order_rating: input?.orderRating,
@@ -33,7 +33,7 @@ export const orderRouter = createTRPCRouter({
         .object({
           id: z.number().optional(),
           cuttingEdgeID: z.string().optional(),
-          orderUser: z.string().optional(),
+          orderAsk: z.string().optional(),
           // orderFood: z.string().optional(),
           orderCity: z.string().optional(),
           orderRating: z.number().optional(),
@@ -49,7 +49,7 @@ export const orderRouter = createTRPCRouter({
           id: input?.id != null ? input?.id : undefined,
           order_id:
             input?.cuttingEdgeID != null ? input?.cuttingEdgeID : undefined,
-          order_user: input?.orderUser != null ? input?.orderUser : undefined,
+          order_ask: input?.orderAsk != null ? input?.orderAsk : undefined,
           // order_food: input?.orderFood != null ? input?.orderFood : undefined,
           order_city:
             input?.orderCity != null ? input?.orderCity : undefined,
@@ -71,7 +71,7 @@ export const orderRouter = createTRPCRouter({
           orderID: z.string(),
         }),
         update: z.object({
-          orderUser: z.string().optional(),
+          orderAsk: z.string().optional(),
           // orderFood: z.string().optional(),
           orderCity: z.string().optional(),
           orderRating: z.number().optional(),
@@ -88,8 +88,8 @@ export const orderRouter = createTRPCRouter({
           order_id: input?.select.orderID,
         },
         data: {
-          order_user:
-            input?.update.orderUser != null ? input?.update.orderUser : undefined,
+          order_ask:
+            input?.update.orderAsk != null ? input?.update.orderAsk : undefined,
           // order_food:
             // input?.update.orderFood != null ? input?.update.orderFood : undefined,
           order_city:

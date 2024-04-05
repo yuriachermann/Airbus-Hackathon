@@ -91,7 +91,7 @@ function DropdownNotifications() {
                       <span className="mb-2 block text-sm text-slate-200">
                         📣{" "}
                         <span className="font-medium text-slate-200">
-                          {order.order_user} asked from {order.order_city}
+                          {order.order_ask} asked from {order.order_city}
                         </span>{" "}
                       </span>
                         <span className="block text-xs font-medium text-slate-200">

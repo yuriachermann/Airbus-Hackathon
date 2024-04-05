@@ -19,7 +19,7 @@ model Order {
   order_id         String    @unique @default(cuid())
   order_created_at DateTime  @default(now())
   order_updated_at DateTime? @updatedAt
-  order_user       String?   @default("user")
+  order_ask        String?   @default("user")
   // order_food       String?   @default("food")
   order_city       String?   @default("city")
   order_rating     Int?      @default(0)
