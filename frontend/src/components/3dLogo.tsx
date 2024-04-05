@@ -30,7 +30,7 @@ const GLTFModel = ({file}: {file: string}) => {
   return <group ref={gltfRef} />;
 };
 
-const Logo = ({ fov, file }: { fov: number; file: string }) => {
+const Logo = ({ fov, file, rotation }: { fov: number; file: string; rotation: number }) => {
   const cameraRef = useRef<null>(null);
 
   return (
@@ -72,7 +72,7 @@ const Logo = ({ fov, file }: { fov: number; file: string }) => {
         maxDistance={30}
         dampingFactor={1}
         panSpeed={0.01}
-        rotateSpeed={0.02}
+        rotateSpeed={rotation}
       />
     </Canvas>
   );

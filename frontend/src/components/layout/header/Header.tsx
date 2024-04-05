@@ -78,7 +78,7 @@ function Header({
                     pathname.includes("ordering2") && "!text-[#CC5500]"
                   )}
                 >
-                  Q&A
+                  Training
                 </span>
               </Link>
               <Link href={`/projecting?${routeUser ? `user=${routeUser}` : ""}`}>

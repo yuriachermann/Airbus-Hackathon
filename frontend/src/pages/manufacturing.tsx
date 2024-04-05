@@ -133,8 +133,8 @@ function Manufacturing() {
       <main className="grow select-none">
         <div className="flex items-center justify-center">
           <div className="ml-20 flex h-[75vh] basis-1/2 flex-col justify-start">
-            <div className="m-0 mt-6 text-[17px] font-bold text-mauve12">
-              Logistics
+            <div className="m-0 mt-6 text-[17px] font-bold text-white">
+              Manufacturing Sites
             </div>
             {/* Show info about the client location and order */}
             <div className="flex flex-col">
@@ -171,24 +171,24 @@ function Manufacturing() {
                   loading ? "" : "hidden"
                 } -mt-20 ml-20 text-[15px] text-slate-700`}
               >
-                (Finding best restaurant based on demand forecasting...)
+                (Finding closest Manufacturing site based on your location...)
               </span>
               <span
                 className={`${
                   loading ? "hidden" : ""
                 } -mt-20 ml-20 text-[15px] text-slate-700`}
               ></span>
-              <button
-                onClick={() => {
-                  window.location.href = `/flying?dish=${routeFood}&user=${routeUser}&orderID=${routeOrderID}&city=${city}`;
-                }}
-                className="btn group z-20 mx-20 mt-6 bg-gradient-to-t from-orange-800 to-orange-700 text-white shadow-lg hover:to-orange-500"
-              >
-                Start delivery
-                <span className="ml-1 tracking-normal text-orange-200 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
-                  -&gt;
-                </span>
-              </button>
+              {/*<button*/}
+              {/*  onClick={() => {*/}
+              {/*    window.location.href = `/flying?dish=${routeFood}&user=${routeUser}&orderID=${routeOrderID}&city=${city}`;*/}
+              {/*  }}*/}
+              {/*  className="btn group z-20 mx-20 mt-6 bg-gradient-to-t from-orange-800 to-orange-700 text-white shadow-lg hover:to-orange-500"*/}
+              {/*>*/}
+              {/*  Start delivery*/}
+              {/*  <span className="ml-1 tracking-normal text-orange-200 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">*/}
+              {/*    -&gt;*/}
+              {/*  </span>*/}
+              {/*</button>*/}
             </div>
           </div>
           <div className="h-[75vh] w-full basis-1/2">

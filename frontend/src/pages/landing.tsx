@@ -104,11 +104,11 @@ function Landing() {
       <main className="grow">
         <div>
           <div className="ml-40 mt-6">
-            <div className="m-0 text-[17px] font-bold text-mauve12">
-              Landing
+            <div className="m-0 text-[17px] font-bold text-white">
+              Inspection
             </div>
             <div className="mb-5 mt-[10px] text-[15px] leading-normal text-slate-700">
-              Find the perfect landing spot
+              Inspect workpiece and detect defects
             </div>
           </div>
           <div className="mx-10 flex flex-col items-center justify-around p-6 md:flex-row">
@@ -194,17 +194,17 @@ function Landing() {
               >
                 Detect
               </button>
-              <button
-                onClick={() => {
-                  window.location.href = `/delivery?dish=${routeFood}&user=${routeUser}&orderID=${routeOrderID}&city=${routeCity}`;
-                }}
-                className="btn group bg-gradient-to-t from-orange-800 to-orange-700 text-white shadow-lg hover:to-orange-500"
-              >
-                Complete Delivery
-                <span className="ml-1 tracking-normal text-orange-200 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
-                  -&gt;
-                </span>
-              </button>
+              {/*<button*/}
+              {/*  onClick={() => {*/}
+              {/*    window.location.href = `/delivery?dish=${routeFood}&user=${routeUser}&orderID=${routeOrderID}&city=${routeCity}`;*/}
+              {/*  }}*/}
+              {/*  className="btn group bg-gradient-to-t from-orange-800 to-orange-700 text-white shadow-lg hover:to-orange-500"*/}
+              {/*>*/}
+              {/*  N*/}
+              {/*  <span className="ml-1 tracking-normal text-orange-200 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">*/}
+              {/*    -&gt;*/}
+              {/*  </span>*/}
+              {/*</button>*/}
             </div>
             <div className="max-h-sm max-w-sm border-2 border-slate-800">
               {loading ? (

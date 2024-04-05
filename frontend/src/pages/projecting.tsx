@@ -100,7 +100,7 @@ function Manufacturing() {
         <div className="flex items-center justify-center">
           {/* Show info about the client location and order */}
           <div className="z-10 -mt-8 h-96 w-full self-center">
-            <Logo fov={15} file={"airplane_engine"} />
+            <Logo fov={15} file={"airplane_engine"} rotation={0.3}/>
           </div>
         </div>
         <div className="absolute top-0 -z-10 -mt-24 h-[100vh] w-[100vw] opacity-50">

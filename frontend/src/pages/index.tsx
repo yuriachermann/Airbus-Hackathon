@@ -71,7 +71,7 @@ function Home() {
             data-aos="fade-up"
             data-aos-delay="1500"
           >
-            <Link className="button-home" href="/ordering">
+            <Link className="button-home" href="/ordering2">
               <span className="label text-white">START</span>
               <span className="icon">
                 <span></span>
@@ -124,7 +124,7 @@ function Home() {
                 data-aos-delay="1500"
                 onClick={() => {
                   setTimeout(() => {
-                    window.location.href = '/ordering'
+                    window.location.href = '/ordering2'
                   }, 500) // 500 ms delay
                 }}
               >
