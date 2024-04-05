@@ -106,7 +106,7 @@ function Delivery() {
             )}
           </div>
           <div className="z-10 h-96 w-96 self-center">
-            <Logo fov={15} file='nothing' />
+            <Logo fov={15} file='nothing' rotation={0.3} />
           </div>
         </div>
       </main>

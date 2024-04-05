@@ -164,7 +164,7 @@ function Manufacturing() {
                 Closest Manufacturing Site
               </button>
               <div className="z-10 -mt-8 h-96 w-full self-center">
-                <Logo fov={60} file={"a320"} />
+                <Logo fov={60} file={"a320"} rotation={0.3} />
               </div>
               <span
                 className={`${
